@@ -4,3 +4,9 @@ const menu = document.getElementById("menu");
     menu.addEventListener("click", () => {
     linkes.classList.toggle("ativo");
 });
+
+document.querySelectorAll(".nav-linkes a").forEach(link => {
+    link.addEventListener("click", () => {
+        linkes.classList.remove("ativo");
+    });
+});
