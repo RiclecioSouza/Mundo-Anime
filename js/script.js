@@ -10,3 +10,6 @@ document.querySelectorAll(".nav-linkes a").forEach(link => {
         linkes.classList.remove("ativo");
     });
 });
+
+const ano = new Date();
+document.getElementById("ano").innerHTML = ano.getFullYear();
